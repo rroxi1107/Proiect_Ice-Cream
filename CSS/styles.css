@@ -1,5 +1,297 @@
-.header {
-    background-color: #FFB8CA;
-    width: 1280px;
-    height: 664px;
+:root {
+    --background-section2-section3-rozDeschis: #FFB8CA;
+    --background-section2-roz-inchis: #FFA5BA;
+    --background-section3-section7-bej: #F0D1A5;
+    --background-section3-section7-verde: #C2E297;
+    --backround-sec4-sec5-sec7-sec8-rozAlbit: #FFF5F6;
+    --bacground-buttonWhite-sec1-sec2-sec4-sec7: #FFFFFF;
+    --background-buttonRed-section2-section7: #D41443;
+    --backgoundSVG-footer: #FEA5BB;
+    --background-modal: #E18298;
+    --underline-color: #E1E1E1;
+
+    --font-color-white: #FFFFFF;
+    --font-color-red: #D41443;
+    --font-color-pink: #FFA5BA;
+    --font-color-footer-Grey: #907E82;
 }
+
+@font-face {
+    font-family: "DM Sans";
+    src: url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    
+}
+
+@font-face {
+    font-family: "Titan One";
+    src: url('https: //fonts.googleapis.com/css2?family=Titan+One&display=swap');
+}
+
+
+
+
+.header {
+    background-color: var(--background-section2-section3-rozDeschis);
+    height: 664px;
+    margin: 0 auto;
+}
+
+.antet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 56px;
+    padding-right: 56px;
+    top: 40px;
+    position: relative;
+}
+
+.logo-header {
+    width: 199px;
+    height: 50px;
+}
+
+.navigation-menu {
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.83px;
+    text-align: left;
+    z-index: 1;
+}
+
+.navigation-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.navigation-menu li {
+    margin-right: 35px;
+}
+
+.navigation-menu ul li a {
+    text-decoration: none;
+    color: var(--font-color-white);
+}
+
+.navigation-menu ul li a:hover {
+    text-decoration: none;
+    color: var(--font-color-red);
+}
+
+.buy-now-bttn {
+    width: 159px;
+    height: 44px;
+    border-radius: 22px 22px 22px 22px;
+    background-color: #FFFFFF;
+    border: 2px;
+    color: var(--font-color-red);
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.83px;
+    text-align: center;
+    z-index: 1;
+}
+
+
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left {
+    position: relative;
+    top: 40px;
+    left: 56px;
+    padding-right: 207px;
+    z-index: 1;
+}
+
+.right {
+    display: block;
+    height: 664px;
+    z-index: 1;
+
+
+}
+
+.middle {
+    position: relative;
+    top: 55px;
+    z-index: 1;
+}
+
+
+
+.hero-motto {
+    width: 277px;
+}
+
+
+.hero-motto h2 {
+    font-family: "Titan One";
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 43.51px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: var(--font-color-white);
+    display: block;
+    margin-bottom: 0px;
+}
+
+.hero-motto h1 {
+    font-family: "Titan One";
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 52.49px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: var(--font-color-red);
+    margin-top: 0px;
+
+}
+
+.buttons-hero {
+    display: flex;
+    gap: 12px;
+    margin: 0 auto;
+}
+
+.products-bttn {
+    width: 107px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--background-buttonRed-section2-section7);
+    border: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.23px;
+    text-align: center;
+    color: var(--font-color-white);
+}
+
+
+.how-its-made-bttn {
+    width: 138px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--bacground-buttonWhite-sec1-sec2-sec4-sec7);
+    border: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.23px;
+    text-align: center;
+    color: var(--font-color-red);
+    
+}
+
+.milk-and-recipe {
+    display: flex;
+    gap: 0px;
+    position: relative;
+    top: 40px;
+}
+
+.milk-cup {
+    width: 213px;
+    height: 216px;
+    top: 388px;
+}
+
+
+.text-recipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipe {
+    width: 200px;
+    height: 78px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+    color: var(--font-color-white);
+}
+
+.arrow {
+    margin-top: 24px;
+}
+
+.ice-cream-cone {
+    width: 236px;
+    height: 557px;
+}
+
+
+
+
+
+.circle-background {
+    position: absolute;
+    top: 60px;
+    left: 550px;
+    background-color: var(--background-section2-roz-inchis);
+    width: 534px;
+    height: 534px;
+    border-radius: 50%;
+}
+
+.numbers {
+    position: relative;
+    top: 68px;
+    right: 56px;
+    z-index: 1;
+}
+
+
+
+.circle-white {
+    width: 30px;
+    height: 30px;
+    background-color: var(--bacground-buttonWhite-sec1-sec2-sec4-sec7);
+    border-radius: 50%;
+    position: relative;
+    left: 290px;
+    top: -90px;
+    z-index: -1;
+}
+  
+
+.title-big {
+    font-family: Titan One;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 52.67px;
+    letter-spacing: 0.04em;
+    text-align: right;
+    color: var(--font-color-red);
+    margin-bottom: 0px;
+
+}
+
+.title-small{
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.23px;
+    text-align: right;
+    color: var(--font-color-white);
+    margin-top: 2px;
+}
+
+.tasty-ice-cream {
+    position: relative;
+    top: -10px;
+    right: -50px;
+}
+
+
